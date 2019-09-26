@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+      show-sql: true
+      format-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp.use_jdbc_metadata_defaults: false
+  datasource:
+    password: secret
+    username: user
+    url: jdbc:postgresql://localhost:5432/produtos
+
+server:
+  servlet:
+    context-path: /demo-rubens
